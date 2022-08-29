@@ -1,6 +1,12 @@
 .films-overview {
-    border: 1px solid blue;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    list-style-type: none;
+    padding: unset;
+    margin-top: 16px;
+
+    li {
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
 }
