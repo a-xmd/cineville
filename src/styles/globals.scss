@@ -1,0 +1,37 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('../../public/static/fonts/JetBrainsMono-Regular.woff2');
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+
