@@ -2,7 +2,7 @@ const { access, mkdir } = require('fs/promises')
 const sharp = require('sharp')
 
 ;(async () => {
-  const FILMNAME = 'les-olympiades'
+  const FILMNAME = 'kajillionaire'
 
   const filmsDir = 'public/static/images/films'
   const outputDir = `${filmsDir}/${FILMNAME}`

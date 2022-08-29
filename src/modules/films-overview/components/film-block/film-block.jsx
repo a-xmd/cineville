@@ -16,6 +16,7 @@ const FilmBlock = ({ film, lang }) => {
       </div>
       <div className={classnames(styles['film-block__content'])}>
         <h3>{film.title}</h3>
+        {film.alternativeTitle && <div>{film.alternativeTitle}</div>}
       </div>
     </article>
   )

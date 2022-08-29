@@ -2,19 +2,110 @@
   {
     "title": "Fire of Love",
     "identifier": "fire-of-love",
-    "originalTitle": null,
+    "alternativeTitle": null,
     "imageDescription": {
       "nl": "Vulkanoloog in beschermend pak nabij een uitgebarste vulkaan",
       "en": "Volcanologist in protective suit near an erupted volcano"
+    },
+    "links": {
+      "letterboxd": "https://letterboxd.com/film/fire-of-love-2022/"
     }
   },
   {
-    "title": "Another Round",
+    "title": "Druk",
     "identifier": "druk",
-    "originalTitle": "Druk",
+    "alternativeTitle": "Another Round",
     "imageDescription": {
       "nl": "Hoofdpersonage Madd Mikkelsen kijkt droevig in de verte terwijl achter hem studenten feesten",
       "en": "Sad looking main character Madd Mikkelsen looks into the distance while students party behind him"
+    },
+    "links": {
+      "letterboxd": "https://letterboxd.com/film/another-round/"
+    }
+  },
+  {
+    "title": "Les Olympiades",
+    "identifier": "les-olympiades",
+    "alternativeTitle": "Paris, 13th District ",
+    "imageDescription": {
+      "nl": "Drie personages die gemoedelijk in een park lopen",
+      "en": "Three persons walking in a park"
+    },
+    "links": {
+      "letterboxd": "https://letterboxd.com/film/paris-13th-district/"
+    }
+  },
+  {
+    "title": "Speak no evil",
+    "identifier": "speak-no-evil",
+    "alternativeTitle": null,
+    "imageDescription": {
+      "nl": "Man kijkt angstig in de spiegel, waarin hij achter zich iemand zit staan",
+      "en": "Man anxiously looks in the mirror, seeing another person behind him"
+    },
+    "links": {
+      "letterboxd": "https://letterboxd.com/film/speak-no-evil-2022/"
+    }
+  },
+  {
+    "title": "기생충",
+    "identifier": "parasite",
+    "alternativeTitle": "Parasite",
+    "imageDescription": {
+      "nl": "Gezin zit aan rommelige tafel bij te komen van een decadent tafereel",
+      "en": "Family sitting at a table filled with the chaotic remains food and drinks"
+    },
+    "links": {
+      "letterboxd": "https://letterboxd.com/film/parasite-2019/"
+    }
+  },
+  {
+    "title": "Før Frosten",
+    "identifier": "for-frosten",
+    "alternativeTitle": "Before the Frost",
+    "imageDescription": {
+      "nl": "Man kijkt achter zich op een kerkbankje in een volle kerk",
+      "en": "Man looking behind him on a church bench in a full church"
+    },
+    "links": {
+      "letterboxd": "https://letterboxd.com/film/before-the-frost-2018/"
+    }
+  },
+  {
+    "title": "L'événement",
+    "identifier": "happening",
+    "alternativeTitle": "happening",
+    "imageDescription": {
+      "nl": "Jonge vrouw omhelst bezorgd kijkende moeder",
+      "en": "Young woman embraces worriedly looking mother"
+    },
+    "links": {
+      "letterboxd": "https://letterboxd.com/film/happening/"
+    }
+  },
+  {
+    "title": "Vuelven",
+    "identifier": "vuelven",
+    "alternativeTitle": "Tigers Are Not Afraid",
+    "imageDescription": {
+      "nl": "Groep tieners poseert op een vervallen plek",
+      "en": "Group of teenagers pose in front of a run down place"
+    },
+    "links": {
+      "letterboxd": "https://letterboxd.com/film/tigers-are-not-afraid/"
+    }
+  },
+  {
+    "title": "Kajillionaire",
+    "identifier": "kajillionaire",
+    "alternativeTitle": null,
+    "imageDescription": {
+      "nl": "Drie familieleden die uit zicht proberen te blijven",
+      "en": "Three familymembers trying to stay out of sight"
+    },
+    "links": {
+      "letterboxd": "https://letterboxd.com/film/kajillionaire/"
     }
   }
 ]
+

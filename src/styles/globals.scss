@@ -30,6 +30,13 @@ input, button, textarea, select {
   src: url('../../public/static/fonts/JetBrainsMono-Regular.woff2');
 }
 
+main {
+  padding: 8px;
+
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
 .mono {
   font-family: 'JetBrains Mono', monospace;
 }
