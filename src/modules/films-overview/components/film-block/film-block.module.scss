@@ -1,5 +1,19 @@
 .film-block {
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 8px;
 
-    padding: 4px;
+    &__content {
+        flex-grow: 1;
+        padding: 8px;
+    }
+
+    @media (min-width: 760px) {
+        flex-direction: row;
+
+        &__image {
+            max-width: 250px;
+        }
+    }
 }

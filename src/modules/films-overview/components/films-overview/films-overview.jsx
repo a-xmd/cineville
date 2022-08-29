@@ -4,11 +4,16 @@ import styles from './films-overview.module.scss'
 
 const FilmsOverview = ({ films }) => {
   return (
-    <div className={styles['films-overview']}>
-      {films.map((film) => (
-        <FilmBlock key={`${film.identifier}`} film={film} />
-      ))}
-    </div>
+    <>
+      <h2>Visited films</h2>
+      <ul className={styles['films-overview']}>
+        {films.map((film) => (
+          <li key={`${film.identifier}`}>
+            <FilmBlock film={film} />
+          </li>
+        ))}
+      </ul>
+    </>
   )
 }
 
