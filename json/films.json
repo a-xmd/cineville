@@ -2,11 +2,19 @@
   {
     "title": "Fire of Love",
     "identifier": "fire-of-love",
-    "originalTitle": null
+    "originalTitle": null,
+    "imageDescription": {
+      "nl": "Vulkanoloog in beschermend pak nabij een uitgebarste vulkaan",
+      "en": "Volcanologist in protective suit near an erupted volcano"
+    }
   },
   {
     "title": "Another Round",
     "identifier": "druk",
-    "originalTitle": "Druk"
+    "originalTitle": "Druk",
+    "imageDescription": {
+      "nl": "Hoofdpersonage Madd Mikkelsen kijkt droevig in de verte terwijl achter hem studenten feesten",
+      "en": "Sad looking main character Madd Mikkelsen looks into the distance while students party behind him"
+    }
   }
 ]

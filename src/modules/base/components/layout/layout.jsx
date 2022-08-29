@@ -1,6 +1,8 @@
+import { Header } from 'modules/base'
+
 const Layout = ({ children }) => (
   <>
-    <header>[header]</header>
+    <Header />
     <main>{children}</main>
   </>
 )
