@@ -10,6 +10,13 @@
             font-size: 80%;
             margin-bottom: 8px;
         }
+
+        .rating-block {
+            display: grid;
+            gap: 8px;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+        }
     }
 
     @media (min-width: 760px) {

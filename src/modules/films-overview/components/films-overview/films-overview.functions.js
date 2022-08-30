@@ -6,6 +6,8 @@ export const sortFilms = (films, type, isAscending = true) => {
       return sortByDate(films, isAscending)
     case SORT_TITLE:
       return sortByTitle(films, isAscending)
+    case SORT_SCORE:
+      return sortByScore(films, isAscending)
   }
 }
 
@@ -28,5 +30,14 @@ const sortByDate = (films, isAscending) => {
       return previous.seen - next.seen
     }
     return next.seen - previous.seen
+  })
+}
+
+const sortByScore = (films, isAscending) => {
+  return [...films].sort((previous, next) => {
+    if (isAscending) {
+      return previous.rating.cineville - next.rating.cineville
+    }
+    return next.rating.cineville - previous.rating.cineville
   })
 }
