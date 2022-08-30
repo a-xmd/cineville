@@ -12,6 +12,7 @@ const reducer = (state, action) => {
   switch (action.type) {
     case SET_SORT_TYPE:
       newState.sortBy = action.value
+      newState.isAscending = true
       break
     case SET_SORT_ORDER:
       newState.isAscending = action.value === 'asc'

@@ -12,14 +12,16 @@ export default function RadioGroup({
   return (
     <fieldset className={classnames(styles['radio-group'])}>
       <legend>{legend}</legend>
-      {children.map((child, index) =>
-        cloneElement(child, {
-          name,
-          key: `radio-button-${index}`,
-          selectedValue: value,
-          onChange,
-        })
-      )}
+      <div className={styles['radio-buttons-container']}>
+        {children.map((child, index) =>
+          cloneElement(child, {
+            name,
+            key: `radio-button-${index}`,
+            selectedValue: value,
+            onChange,
+          })
+        )}
+      </div>
     </fieldset>
   )
 }

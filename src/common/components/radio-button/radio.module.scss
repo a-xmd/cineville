@@ -3,22 +3,28 @@
     padding: unset;
 
     display: flex;
-    gap: 8px;
 
     legend {
         font-variant: small-caps;
     }
 
-    .radio-button {
+    .radio-buttons-container {
         display: flex;
-        align-items: center;
+        gap: 16px;
 
-        label {
+        .radio-button {
             display: flex;
-            gap: 4px;
-            user-select: none;
-
-            input {}
+            align-items: center;
+    
+            label {
+                display: flex;
+                gap: 4px;
+                user-select: none;
+    
+                input {}
+            }
         }
     }
+
+
 }
