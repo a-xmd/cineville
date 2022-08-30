@@ -5,6 +5,9 @@ import styles from './image.module.scss'
 const Image = ({ imageName, alt, ext = 'jpg' }) => {
   const src = getPublicDirLink(imageName)
 
+  // TODO: set proper sizes
+  // see: https://mor10.com/experiments/ricg/
+
   return (
     <picture className={classnames(styles.image)}>
       <source
@@ -18,12 +21,12 @@ const Image = ({ imageName, alt, ext = 'jpg' }) => {
         sizes="100vw"
       />
       <source
-        media="(max-width: 1152px"
+        media="(max-width: 1152px)"
         srcSet={`${src}-1152.${ext} 1152w`}
         sizes="100vw"
       />
       <source
-        media="(max-width: 1440"
+        media="(max-width: 1440px)"
         srcSet={`${src}-1440.${ext} 1440w`}
         sizes="100vw"
       />
