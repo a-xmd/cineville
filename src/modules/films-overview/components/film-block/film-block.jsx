@@ -25,7 +25,9 @@ const FilmBlock = ({ film, lang }) => {
         <h3>{film.title}</h3>
         {film.alternativeTitle && <div>{film.alternativeTitle}</div>}
 
-        <div>Gezien op {dateSeen}</div>
+        <div className={classnames(styles['date-seen'])}>
+          gezien op {dateSeen}
+        </div>
         <div>
           rating cv: {film.rating?.cineville} . ik {film.rating?.you}
         </div>
