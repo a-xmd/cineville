@@ -1,0 +1,14 @@
+.dropdown {
+
+    background-color: unset;
+    // TODO: reset while keeping the chevrons for Safari
+    // See: https://stackoverflow.com/questions/12498358/select-arrow-missing-on-safari-windows
+    // -webkit-appearance:none;
+
+    border: unset;
+    border-radius: unset;
+
+    display: flex;
+    padding: 8px;
+    border: 1px solid black;
+}

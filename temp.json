@@ -1,28 +1,4 @@
-[
-  {
-    "title": "Fire of Love",
-    "identifier": "fire-of-love",
-    "alternativeTitle": null,
-    "imageDescription": {
-      "nl": "Vulkanoloog in beschermend pak nabij een uitgebarste vulkaan.",
-      "en": "Volcanologist in protective suit near an erupted volcano."
-    },
-    "links": {
-      "letterboxd": "https://letterboxd.com/film/fire-of-love-2022/"
-    }
-  },
-  {
-    "title": "Druk",
-    "identifier": "druk",
-    "alternativeTitle": "Another Round",
-    "imageDescription": {
-      "nl": "Hoofdpersonage Madd Mikkelsen kijkt droevig in de verte terwijl achter hem studenten feesten.",
-      "en": "Sad looking main character Madd Mikkelsen looks into the distance while students party behind him."
-    },
-    "links": {
-      "letterboxd": "https://letterboxd.com/film/another-round/"
-    }
-  },
+,
   {
     "title": "Les Olympiades",
     "identifier": "les-olympiades",
@@ -132,9 +108,9 @@
     }
   },
   {
-    "title": "ドライブ・マイ・カー",
+    "title": "Drive My Car",
     "identifier": "drive-my-car",
-    "alternativeTitle": "Drive my car",
+    "alternativeTitle": null,
     "imageDescription": {
       "nl": "Man kijkt leunend op zijn auto in de verte.",
       "en": "Man leaning on car looks into the distance."
@@ -142,18 +118,4 @@
     "links": {
       "letterboxd": "https://letterboxd.com/film/drive-my-car/"
     }
-  },
-  {
-    "title": "For Sama",
-    "identifier": "for-sama",
-    "alternativeTitle": null,
-    "imageDescription": {
-      "nl": "Familie kijkt naar resten van een vernietigd gebouw",
-      "en": "Family looks at remains of destroyed houses"
-    },
-    "links": {
-      "letterboxd": "https://letterboxd.com/film/for-sama/"
-    }
   }
-]
-

@@ -1,15 +1,24 @@
 import classnames from 'classnames'
-// import { useTranslation } from 'next-export-i18n'
 import FilmBlock from '../film-block/film-block'
+import OptionsBar from '../options-bar/options-bar'
 import { useUser } from 'common/contexts'
+import { useFilms } from './films-overview.hooks'
 import styles from './films-overview.module.scss'
 
-const FilmsOverview = ({ films }) => {
+const FilmsOverview = ({ _films }) => {
   const { lang } = useUser()
-  // const { t } = useTranslation()
+
+  const { state, dispatch } = useFilms(_films)
+  const { sortBy, isAscending, films } = state
+
   return (
     <>
       <h2>Bekeken films</h2>
+      <OptionsBar
+        sortBy={sortBy}
+        isAscending={isAscending}
+        dispatch={dispatch}
+      />
       <ul className={classnames(styles['films-overview'])}>
         {films.map((film) => (
           <li key={`${film.identifier}`}>

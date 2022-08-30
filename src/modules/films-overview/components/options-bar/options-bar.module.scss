@@ -1,0 +1,15 @@
+.options-bar {
+    display: flex;
+    gap: 16px;
+
+    .label {
+        font-variant: small-caps;
+        user-select: none;
+    }
+
+    .order {
+
+
+        display: flex;
+    }
+}

@@ -12,11 +12,12 @@
         gap: 8px;
 
         &__image {
-            max-width: 250px;
+            max-width: 260px;
         }
 
         &__content {
             padding: 8px;
+            padding-top: unset;
         }
     }
 }

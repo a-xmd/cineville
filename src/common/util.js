@@ -1,8 +1,3 @@
-/**
- *
- * @param {*} path
- * @returns
- */
 export const getPublicDirLink = (path) => {
   if (
     !process.env.NEXT_PUBLIC_IS_LOCAL_PRODUCTION &&

@@ -7,11 +7,3 @@ const Header = ({}) => {
 }
 
 export default Header
-
-/*
-      <select value={lang} onChange={(e) => setLang(e.currentTarget.value)}>
-        <option value="en">engels</option>
-        <option value="nl">nederlands</option>
-      </select>
-
-*/
