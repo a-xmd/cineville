@@ -10,7 +10,7 @@ const FilmBlock = ({ film, lang }) => {
     day: '2-digit',
     month: 'long',
     year: 'numeric',
-    weekday: 'short',
+    // weekday: 'short',
   })
 
   return (
