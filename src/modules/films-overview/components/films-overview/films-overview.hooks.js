@@ -1,10 +1,10 @@
 import { useReducer, useEffect } from 'react'
 import {
-  SORT_NAME,
+  SORT_TITLE,
   SET_SORT_TYPE,
   SET_SORT_ORDER,
 } from './films-overview.constants'
-import { sortByTitle } from './films-overview.functions'
+import { sortFilms } from './films-overview.functions'
 
 const reducer = (state, action) => {
   const newState = { ...state }
@@ -19,13 +19,17 @@ const reducer = (state, action) => {
       break
   }
 
-  newState.films = sortByTitle(state.films, newState.isAscending)
+  newState.films = sortFilms(
+    newState.films,
+    newState.sortBy,
+    newState.isAscending
+  )
   return newState
 }
 
 export const useFilms = (_films) => {
   const [state, dispatch] = useReducer(reducer, {
-    sortBy: SORT_NAME,
+    sortBy: SORT_TITLE,
     isAscending: true,
     films: _films,
   })
