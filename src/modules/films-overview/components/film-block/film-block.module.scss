@@ -5,6 +5,11 @@
     &__content {
         flex-grow: 1;
         padding: 8px 0;
+
+        .date-seen {
+            font-size: 80%;
+            margin-bottom: 8px;
+        }
     }
 
     @media (min-width: 760px) {
