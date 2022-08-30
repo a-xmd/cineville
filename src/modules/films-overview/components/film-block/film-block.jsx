@@ -1,5 +1,5 @@
 import classnames from 'classnames'
-import { Image } from 'common/components'
+import { Image, Rater } from 'common/components'
 import styles from './film-block.module.scss'
 
 const getImagePath = (filmName) =>
@@ -10,7 +10,6 @@ const FilmBlock = ({ film, lang }) => {
     day: '2-digit',
     month: 'long',
     year: 'numeric',
-    // weekday: 'short',
   })
 
   return (
@@ -28,8 +27,8 @@ const FilmBlock = ({ film, lang }) => {
         <div className={classnames(styles['date-seen'])}>
           gezien op {dateSeen}
         </div>
-        <div>
-          rating cv: {film.rating?.cineville} . ik {film.rating?.you}
+        <div className={classnames(styles['rating-block'])}>
+          <Rater score={film.rating.cineville} maxScore={5} />
         </div>
       </div>
     </article>
@@ -37,3 +36,9 @@ const FilmBlock = ({ film, lang }) => {
 }
 
 export default FilmBlock
+
+/*
+          <div>Cineville waardering</div>
+            <Rater score={film.rating.cineville} maxScore={5} />
+          
+*/
