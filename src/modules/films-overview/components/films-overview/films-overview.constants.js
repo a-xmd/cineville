@@ -1,4 +1,4 @@
-export const SORT_NAME = 'name'
+export const SORT_TITLE = 'title'
 export const SORT_DATE = 'date'
 export const SORT_SCORE = 'score'
 

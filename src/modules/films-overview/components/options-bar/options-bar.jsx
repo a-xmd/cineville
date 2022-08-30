@@ -3,7 +3,7 @@ import classnames from 'classnames'
 import { DropDown, Option } from 'common/components'
 import {
   SORT_DATE,
-  SORT_NAME,
+  SORT_TITLE,
   SORT_SCORE,
 } from '../films-overview/films-overview.constants'
 import SubSort from './sub-sort'
@@ -11,7 +11,7 @@ import styles from './options-bar.module.scss'
 
 const OptionsBar = ({ sortBy, isAscending, dispatch }) => {
   const sortTypes = [
-    { type: SORT_NAME, name: 'naam' },
+    { type: SORT_TITLE, name: 'naam' },
     { type: SORT_SCORE, name: 'score' },
     { type: SORT_DATE, name: 'datum' },
   ]

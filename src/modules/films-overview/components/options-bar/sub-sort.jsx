@@ -1,6 +1,6 @@
 import { RadioGroup, RadioButton } from 'common/components'
 import {
-  SORT_NAME,
+  SORT_TITLE,
   SORT_SCORE,
   SORT_DATE,
   SET_SORT_ORDER,
@@ -11,7 +11,7 @@ const SubSort = ({ type, isAscending, dispatch }) => {
   let rightText
 
   switch (type) {
-    case SORT_NAME:
+    case SORT_TITLE:
       leftText = 'a'
       rightText = 'z'
       break
