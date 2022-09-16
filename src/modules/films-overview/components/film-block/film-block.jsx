@@ -17,7 +17,9 @@ const FilmBlock = ({ film, lang }) => {
       <div className={styles['film-block__image']}>
         <Image
           imageName={getImagePath(film.identifier)}
-          alt={film.imageDescription[lang]}
+          alt={film.image.description[lang]}
+          width={film.image.size.width}
+          height={film.image.size.height}
         />
       </div>
       <div className={classnames(styles['film-block__content'])}>
