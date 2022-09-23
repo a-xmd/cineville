@@ -1,0 +1,5 @@
+export { default as ChevronRightIcon } from './chrevron-right'
+export { default as CrossIcon } from './cross'
+export { default as FilmIcon } from './film'
+export { default as MenuIcon } from './menu'
+export { default as PersonIcon } from './person'

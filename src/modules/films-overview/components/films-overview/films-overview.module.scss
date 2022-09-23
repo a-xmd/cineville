@@ -1,12 +1,40 @@
-.films-overview {
-    list-style-type: none;
-    padding: unset;
-    margin-top: 16px;
+.heading {
+    margin-bottom: 1rem;
+}
 
-    li {
+.container {
+    display: flex;
+    gap: 1rem;
 
-        &:not(:last-child) {
-            margin-bottom: 16px;
+    > * {
+        flex: 1;
+    }
+
+    .left {
+        flex: 1;
+
+        .films-overview {
+            list-style-type: none;
+            padding: unset;
+
+            li {
+    
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    .right {
+        display: none;
+        max-width: 400px;
+        background-color: #00000004;
+        border-radius: 16px;
+        padding: 1rem;
+
+        @media screen and (min-width: 1000px) {
+            display: flex;
         }
     }
 }

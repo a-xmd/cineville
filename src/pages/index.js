@@ -12,7 +12,7 @@ export default function Home({ _films }) {
         <meta
           name="description"
           content="A place to experiment with making Cineville website more social. Note: Not associated with Cineville!"
-        ></meta>
+        />
       </Head>
 
       <FilmsOverview _films={_films} />

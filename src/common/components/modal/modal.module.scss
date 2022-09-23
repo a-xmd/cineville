@@ -1,0 +1,49 @@
+.modal {
+    border: unset;
+
+    padding: unset;
+
+    &[open] {
+        display: grid;
+    }
+
+    // TODO: create proper fix for ios devices
+
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+
+    width: 100vw;
+
+    // note: has weird UA-default! chrome: calc((100% - 6px) - 2em) ??
+    max-width: unset;
+
+    left: 0;
+    top: 0;
+
+    grid-template-rows: max-content auto;
+
+    @supports (-webkit-touch-callout: none) {
+          height: -webkit-fill-available;
+    }
+
+    .header {
+        display: flex;
+
+        .title {
+            flex: 1;
+            padding: 0.75rem 1rem;
+        }
+
+        button {
+            padding: 0.75rem;
+
+            svg {
+                width: 16px;
+                height: 16;;
+            }
+        }
+    }
+
+    .content {}
+
+}

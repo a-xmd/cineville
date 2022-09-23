@@ -1,5 +1,7 @@
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import classnames from 'classnames'
-import { Image, Rater } from 'common/components'
+import { Image, Modal, Rater, PersonIcon } from 'common/components'
 import styles from './film-block.module.scss'
 
 const getImagePath = (filmName) =>
@@ -12,9 +14,27 @@ const FilmBlock = ({ film, lang }) => {
     year: 'numeric',
   })
 
+  const [modalIsOpen, setModalIsOpen] = useState(false)
+
   return (
     <article className={styles['film-block']}>
+      {modalIsOpen && (
+        <Modal title={film.title} cancelCallback={() => setModalIsOpen(false)}>
+          <section>content</section>
+        </Modal>
+      )}
       <div className={styles['film-block__image']}>
+        <button
+          className={classnames(styles['icon-container'])}
+          onClick={() => {
+            // TODO: remove!
+            return
+            setModalIsOpen(true)
+          }}
+        >
+          <PersonIcon />
+          <span>63</span>
+        </button>
         <Image
           imageName={getImagePath(film.identifier)}
           alt={film.image.description[lang]}
@@ -23,7 +43,9 @@ const FilmBlock = ({ film, lang }) => {
         />
       </div>
       <div className={classnames(styles['film-block__content'])}>
-        <h3>{film.title}</h3>
+        <h3>
+          <Link href={`/films/${film.identifier}`}>{film.title}</Link>
+        </h3>
         {film.alternativeTitle && <div>{film.alternativeTitle}</div>}
 
         <div className={classnames(styles['date-seen'])}>

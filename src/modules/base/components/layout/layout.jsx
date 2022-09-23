@@ -4,6 +4,7 @@ const Layout = ({ children }) => (
   <>
     <Header />
     <main>{children}</main>
+    <div data-fullscreen-modal-root></div>
   </>
 )
 

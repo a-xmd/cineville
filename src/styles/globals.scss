@@ -1,3 +1,13 @@
+@use 'styles/variables';
+
+:root {
+
+  --width-content: 1152px;
+
+  --padding-content: 1rem;
+  --color-link: #0969da;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -12,8 +22,15 @@ html, body {
 
 body {
   font-family: Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+
+  color: variables.$dark-1;
+
+  &.has-modal {
+    overflow: hidden;
+  }
 }
 
 img, picture, video, canvas, svg {
@@ -26,16 +43,44 @@ input, button, textarea, select {
   font: inherit;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+
+  @media screen and (-ms-high-contrast: active) {
+    border: 2px solid currentcolor;
+  }
+}
+
+a {
+  color: #0969da;
+}
+
 @font-face {
   font-family: 'JetBrains Mono';
   src: url('../../public/static/fonts/JetBrainsMono-Regular.woff2');
 }
 
 main {
-  padding: 0 16px;
 
-  max-width: 1152px;
+
+  max-width: var(--width-content);
   margin: 0 auto;
+  padding: 0 var(--padding-content);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1.125rem;
 }
 
 .mono {

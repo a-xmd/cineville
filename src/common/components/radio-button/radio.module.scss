@@ -10,7 +10,7 @@
 
     .radio-buttons-container {
         display: flex;
-        gap: 16px;
+        gap: 1rem;
 
         .radio-button {
             display: flex;
@@ -18,7 +18,7 @@
 
             label {
                 display: flex;
-                gap: 4px;
+                gap: 0.25rem;
                 user-select: none;
     
                 input {}

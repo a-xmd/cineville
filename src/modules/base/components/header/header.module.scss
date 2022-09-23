@@ -1,3 +1,57 @@
-.header {
-    display: flex;
+@use 'styles/variables';
+
+.outer {
+    background-color: variables.$dark-9;
+    margin-bottom: 1rem;
+
+    .inner {
+        display: flex;
+        gap: 2rem;
+
+        max-width: var(--width-content);
+        margin: 0 auto;
+        padding: 1rem var(--padding-content);
+
+        .left {
+            svg {
+                width: 32px;
+            }
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                padding: 4px;
+                border-radius: 8px;
+                border: 1px solid variables.$dark-1;
+    
+                svg {
+                    width: 24px;
+                    height: 24px;
+                }
+
+
+            }
+
+        }
+    }
 }
+
+@media screen and (min-width: variables.$breakpoint-sm) {
+    .outer {
+        margin-bottom: 1.5rem;
+
+        .inner {
+            padding-right: 2rem;
+            .right {
+                 button {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+

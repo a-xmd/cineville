@@ -1,34 +1,75 @@
+@use 'styles/variables';
+
 .film-block {
+
     display: flex;
     flex-direction: column;
+
+    a {
+        text-decoration: unset;
+        color: unset;
+
+        &:hover,
+        &:focus {
+            color: var(--color-link);
+        }
+    }
+
+    &__image {
+        position: relative;
+
+        .icon-container {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
     
+            font-size: variables.$text-sm;
+
+            background-color: white;
+            padding: 0.5rem;
+
+            border-radius: 8px;
+    
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+   
     &__content {
         flex-grow: 1;
-        padding: 8px 0;
+        padding: 0.5rem 0;
 
         .date-seen {
-            font-size: 80%;
-            margin-bottom: 8px;
+            font-size: variables.$text-sm;
+            margin-bottom: 0.5rem;
         }
 
         .rating-block {
             display: grid;
-            gap: 8px;
+            gap: 0.5rem;
             grid-template-columns: auto 1fr;
             align-items: center;
         }
+
+
     }
 
     @media (min-width: 760px) {
         flex-direction: row;
-        gap: 8px;
+        gap: 0.5rem;
 
         &__image {
             max-width: 260px;
         }
 
         &__content {
-            padding: 8px;
+            padding: 0.5rem;
             padding-top: unset;
         }
     }

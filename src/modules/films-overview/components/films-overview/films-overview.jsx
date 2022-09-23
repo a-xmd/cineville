@@ -13,19 +13,24 @@ const FilmsOverview = ({ _films }) => {
 
   return (
     <>
-      <h2>Bekeken films</h2>
+      <h2 className={styles.heading}>Bekeken films</h2>
       <OptionsBar
         sortBy={sortBy}
         isAscending={isAscending}
         dispatch={dispatch}
       />
-      <ul className={classnames(styles['films-overview'])}>
-        {films.map((film) => (
-          <li key={`${film.identifier}`}>
-            <FilmBlock film={film} lang={lang} />
-          </li>
-        ))}
-      </ul>
+      <div className={styles.container}>
+        <section className={styles.left}>
+          <ol className={classnames(styles['films-overview'])}>
+            {films.map((film) => (
+              <li key={`${film.identifier}`}>
+                <FilmBlock film={film} lang={lang} />
+              </li>
+            ))}
+          </ol>
+        </section>
+        <section className={styles.right} data-sidebar></section>
+      </div>
     </>
   )
 }

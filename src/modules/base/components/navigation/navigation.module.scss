@@ -1,0 +1,66 @@
+@use 'styles/variables';
+
+.nav {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    padding: 1rem;
+
+    ol {
+        list-style-type: none;
+        padding: unset;
+
+        li {
+            display: flex;
+            gap: 0.25rem;
+            padding: 0.5rem;
+
+            &:not(:last-child) {
+                margin-bottom: 0.5rem;
+            }
+
+            a {
+                // TODO: remove
+                color: unset;
+                color: #343a40;
+                text-decoration: unset;
+                font-weight: 600;
+                font-size: variables.$text-20;
+            }
+
+            svg {
+                width: 24px;
+            }
+        }
+    }
+
+    &.non-modal {
+        display: none;
+
+        @media screen and (min-width: variables.$breakpoint-sm) {
+            display: flex;
+        }
+
+        padding: unset;
+
+        ol {
+            display: flex;
+            gap: 2rem;
+
+            li {
+                padding: unset;
+
+                &:not(:last-child) {
+                    margin-bottom: unset;
+                }
+
+                svg {
+                    display: none;
+                }
+            }
+        }
+    }
+}
