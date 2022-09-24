@@ -10,11 +10,28 @@
 
         max-width: var(--width-content);
         margin: 0 auto;
-        padding: 1rem var(--padding-content);
+        padding: 1.5rem var(--padding-content);
 
         .left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+
+            .logo-text {
+                display: flex;
+                gap: 8px;
+                font-size: variables.$text-20;
+                font-weight: 700;
+
+                > * {
+                    transform: rotate(-10deg);
+                }
+            }
+
             svg {
                 width: 32px;
+                fill: variables.$dark-1;
             }
         }
 

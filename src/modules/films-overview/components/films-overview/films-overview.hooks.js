@@ -3,6 +3,7 @@ import {
   SORT_TITLE,
   SET_SORT_TYPE,
   SET_SORT_ORDER,
+  SORT_DATE,
 } from './films-overview.constants'
 import { sortFilms } from './films-overview.functions'
 
@@ -29,8 +30,8 @@ const reducer = (state, action) => {
 
 export const useFilms = (_films) => {
   const [state, dispatch] = useReducer(reducer, {
-    sortBy: SORT_TITLE,
-    isAscending: true,
+    sortBy: SORT_DATE,
+    isAscending: false,
     films: _films,
   })
 
