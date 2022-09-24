@@ -12,6 +12,11 @@ export default function Header({}) {
       <div className={classnames(styles['inner'])}>
         <div className={classnames(styles.left)}>
           <FilmIcon hideFromScreenReader={true} />
+          <span className={classnames(styles['logo-text'])}>
+            <span>cv</span>
+            <span>social</span>
+            <span>app</span>
+          </span>
         </div>
 
         <div className={classnames(styles['right'])}>

@@ -44,7 +44,7 @@ const FilmBlock = ({ film, lang }) => {
       </div>
       <div className={classnames(styles['film-block__content'])}>
         <h3>
-          <Link href={`/films/${film.identifier}`}>{film.title}</Link>
+          <Link href={`/films/${film.identifier}/dashboard`}>{film.title}</Link>
         </h3>
         {film.alternativeTitle && <div>{film.alternativeTitle}</div>}
 

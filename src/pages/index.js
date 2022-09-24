@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import Head from 'next/head'
-import { FilmsOverview } from 'modules/films-overview'
+import { FilmsOverview, sortFilms, SORT_DATE } from 'modules/films-overview'
 import { readFile } from 'fs/promises'
-import { sortFilms, SORT_TITLE } from 'modules/films-overview'
 
 export default function Home({ _films }) {
   return (
@@ -25,7 +24,7 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      _films: sortFilms(JSON.parse(data), SORT_TITLE),
+      _films: sortFilms(JSON.parse(data), SORT_DATE, false),
     },
   }
 }
