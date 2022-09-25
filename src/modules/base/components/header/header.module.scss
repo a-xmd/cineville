@@ -13,19 +13,28 @@
         padding: 1.5rem var(--padding-content);
 
         .left {
-            display: flex;
-            align-items: center;
-            gap: 16px;
+
+            a {
+                text-decoration: unset;
+                color: unset;
+    
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
 
 
             .logo-text {
                 display: flex;
-                gap: 8px;
+                gap: 16px;
                 font-size: variables.$text-20;
                 font-weight: 700;
 
                 > * {
                     transform: rotate(-10deg);
+                    // border: 4px dashed variables.$dark-1;
+                    border-left: unset;
+                    border-right: unset;
                 }
             }
 
