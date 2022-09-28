@@ -1,0 +1,32 @@
+@use 'styles/variables';
+
+.film-header {
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    nav {
+        // border-bottom: 1px solid variables.$dark-8;
+
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+
+        a {
+            color: unset;
+            text-decoration: unset;
+            font-weight: 600;
+
+            padding-bottom: 0.2rem;
+            border-bottom: 2px solid transparent;
+
+            &.active {
+                border-color: variables.$dark-1;
+            }
+
+            &:not(.active) {
+                // color: variables.$dark-3;
+            }
+        }
+    }
+}
