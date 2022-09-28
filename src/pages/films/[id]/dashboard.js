@@ -1,10 +1,12 @@
 import { readFile } from 'fs/promises'
-import { FilmLayout } from 'modules/film-layout'
+import { FilmLayout } from 'modules/film-page'
+import { FilmDashboard } from 'modules/film-dashboard'
 
 export default function Film({ film }) {
-  return <div>dashboard</div>
+  return <FilmDashboard film={film} />
 }
 
+// TODO: move to util function!
 const getFilms = async () => {
   const response = await readFile('json/films.json', 'utf-8')
   return JSON.parse(response)
@@ -35,7 +37,10 @@ export async function getStaticPaths() {
 
 Film.getLayout = function (page) {
   return (
-    <FilmLayout title={`Work title / ${page.props.film.title}`}>
+    <FilmLayout
+      title={page.props.film.title}
+      identifier={page.props.film.identifier}
+    >
       {page}
     </FilmLayout>
   )
